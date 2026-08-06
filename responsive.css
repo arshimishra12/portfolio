@@ -1,0 +1,172 @@
+/* ==========================================================================
+   ARSHI MISHRA — RESPONSIVE LAYOUT & MEDIA QUERIES
+   ========================================================================== */
+
+/* LARGE DESKTOPS (> 1400px) */
+@media (min-width: 1400px) {
+  .hero-title {
+    font-size: 9.5rem;
+  }
+}
+
+/* LAPTOPS & DESKTOPS (1024px to 1399px) */
+@media (max-width: 1200px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .projects-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+}
+
+/* TABLETS (768px to 1023px) */
+@media (max-width: 1023px) {
+  .top-hud-bar {
+    padding: 16px 24px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-tagline {
+    max-width: 100%;
+  }
+
+  .hero-portrait-wrapper {
+    order: -1;
+  }
+
+  .portrait-card {
+    height: 440px;
+    max-width: 380px;
+  }
+
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .primary-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-item.size-medium,
+  .project-item.size-portrait {
+    grid-column: span 12;
+  }
+
+  .modal-body {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+
+  .game-menu-nav {
+    bottom: 20px;
+    padding: 6px 8px;
+    gap: 4px;
+  }
+
+  .menu-item {
+    padding: 8px 14px;
+    font-size: 11px;
+  }
+  
+  .menu-item .item-num {
+    display: none;
+  }
+}
+
+/* MOBILE DEVICES (< 767px) */
+@media (max-width: 767px) {
+  .section-container {
+    padding-top: 90px;
+    padding-bottom: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .top-hud-bar {
+    padding: 12px 16px;
+  }
+
+  .brand-sub,
+  .status-indicator {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 4.2rem;
+    letter-spacing: 2px;
+  }
+
+  .portrait-card {
+    height: 380px;
+    max-width: 100%;
+  }
+
+  .about-card,
+  .contact-info-card,
+  .exploring-box,
+  .skill-card-primary {
+    padding: 24px;
+  }
+
+  .potential-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-img-holder {
+    aspect-ratio: 3 / 4 !important;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  .final-thank-you {
+    font-size: 4.5rem;
+    letter-spacing: 3px;
+  }
+
+  .final-tagline {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .game-menu-nav {
+    width: calc(100% - 32px);
+    justify-content: space-around;
+  }
+
+  .menu-item {
+    padding: 8px 10px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  /* Disable custom cursor visuals on mobile */
+  #custom-cursor,
+  #custom-cursor-follower {
+    display: none !important;
+  }
+}

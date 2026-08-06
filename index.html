@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arshi Mishra — Portfolio | CSE Student & Creative Designer</title>
+  <meta name="description" content="Personal portfolio of Arshi Mishra, B.Tech Computer Science student at MIT Manipal (Class of 2030). Exploring design, technology, Figma, Canva, and creative UI/UX.">
+  <meta name="keywords" content="Arshi Mishra, MIT Manipal, Computer Science, UI/UX Design, Portfolio, Figma, Canva, Creative Student">
+  <link rel="icon" href="./favicon.ico" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./animations.css">
+  <link rel="stylesheet" href="./responsive.css">
+</head>
+<body class="loading-active">
+
+  <!-- ==========================================================================
+       INTRO PRELOADER SCREEN
+  ========================================================================== -->
+  <div id="intro-loader">
+    <div class="loader-title">ARSHI MISHRA</div>
+    <div class="loader-bar-container">
+      <div class="loader-bar-fill" id="loader-bar-fill"></div>
+    </div>
+    <div class="loader-status-text">INITIALIZING HUD MENU // 2026 - 2030</div>
+  </div>
+
+  <!-- ==========================================================================
+       BACKGROUND & ATMOSPHERIC EFFECTS
+  ========================================================================== -->
+  <div class="bg-grid-overlay"></div>
+  <div class="scanline"></div>
+  <div class="ambient-glow"></div>
+  <div class="ambient-glow-secondary"></div>
+
+  <!-- ==========================================================================
+       CUSTOM CURSOR (DESKTOP ONLY)
+  ========================================================================== -->
+  <div id="custom-cursor">
+    <span id="custom-cursor-text"></span>
+  </div>
+  <div id="custom-cursor-follower"></div>
+
+  <!-- ==========================================================================
+       TOP HUD NAVIGATION BAR
+  ========================================================================== -->
+  <header class="top-hud-bar">
+    <div class="brand-logo">
+      <div class="logo-badge">AM</div>
+      <div class="brand-text">
+        <span class="brand-name">Arshi Mishra</span>
+        <span class="brand-sub">MIT Manipal '30</span>
+      </div>
+    </div>
+
+    <div class="hud-status">
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span>OPEN FOR CREATIVE COLLABS</span>
+      </div>
+      <button class="sound-toggle-btn" id="sound-toggle" title="Toggle Game HUD Audio">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+        <span>AUDIO: <strong class="sound-state">ON</strong></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       GAME-STYLE FLOATING MENU NAV
+  ========================================================================== -->
+  <nav class="game-menu-nav" aria-label="Main Navigation">
+    <a href="#hero" class="menu-item active">
+      <span class="item-num">01</span>
+      <span>START</span>
+    </a>
+    <a href="#about" class="menu-item">
+      <span class="item-num">02</span>
+      <span>ABOUT</span>
+    </a>
+    <a href="#skills" class="menu-item">
+      <span class="item-num">03</span>
+      <span>SKILLS</span>
+    </a>
+    <a href="#projects" class="menu-item">
+      <span class="item-num">04</span>
+      <span>WORK</span>
+    </a>
+    <a href="#contact" class="menu-item">
+      <span class="item-num">05</span>
+      <span>CONTACT</span>
+    </a>
+  </nav>
+
+  <!-- ==========================================================================
+       1. HERO SECTION
+  ========================================================================== -->
+  <section id="hero">
+    <div class="section-container">
+      <div class="hero-grid">
+        
+        <!-- HERO TEXT & TITLES -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+            </svg>
+            <span>POTENTIAL > EXPERIENCE</span>
+          </div>
+
+          <div class="hero-title-wrapper">
+            <h1 class="hero-title">
+              <span class="line-1">ARSHI</span>
+              <span class="line-2">MISHRA</span>
+            </h1>
+          </div>
+
+          <div class="hero-subtitle">
+            <span>B.Tech CSE Student</span>
+            <span class="college-pill">MIT Manipal • Class of 2030</span>
+          </div>
+
+          <p class="hero-tagline">
+            Learning. Building. Designing.<br>
+            <em>Turning curiosity into visually engaging creations.</em>
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary">
+              <span>EXPLORE WORK</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn-secondary">LET'S TALK</a>
+          </div>
+        </div>
+
+        <!-- HERO PORTRAIT PHOTO -->
+        <div class="hero-portrait-wrapper reveal-on-scroll delay-2">
+          <div class="portrait-glow-ring"></div>
+          <div class="portrait-card">
+            <img src="./arshi-portrait.jpg" alt="Arshi Mishra Portrait" class="portrait-img">
+            <div class="portrait-overlay-hud">
+              <div class="hud-corner-tag">CSE '30 // MIT</div>
+              <div class="hud-bottom-info">
+                <div>
+                  <div class="portrait-name-label">ARSHI MISHRA</div>
+                  <div class="portrait-sub-label">DESIGN & TECH EXPLORER</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. ABOUT ME & EDUCATION SECTION
+  ========================================================================== -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-label">PROFILE // 02</div>
+      <h2 class="section-title">ABOUT <span class="accent-text">ME</span></h2>
+
+      <div class="about-grid">
+        
+        <!-- EDITORIAL BIO CARD -->
+        <div class="about-card reveal-on-scroll">
+          <h3 class="about-heading">Hello, I'm Arshi.</h3>
+          
+          <p class="about-paragraph">
+            I'm a first-year <strong>Computer Science Engineering student at MIT Manipal</strong> who enjoys learning through creating and experimenting with new ideas.
+          </p>
+
+          <p class="about-paragraph">
+            I'm currently exploring the intersection of <strong>design and technology</strong> while building my skills through hands-on projects and creative experimentation.
+          </p>
+
+          <p class="about-paragraph">
+            I particularly enjoy turning abstract concepts into visually engaging and user-friendly experiences using tools like <strong>Figma</strong> and <strong>Canva</strong>.
+          </p>
+
+          <p class="about-paragraph">
+            I'm still at the beginning of my journey, and this portfolio represents the things I'm learning, experimenting with, and creating along the way.
+          </p>
+
+          <!-- EDUCATION TIMELINE BLOCK -->
+          <div class="education-block">
+            <div class="edu-title-row">
+              <div class="institution-name">MIT Manipal</div>
+              <div class="edu-year-badge">2026 – 2030</div>
+            </div>
+            <div class="degree-name">Bachelor of Technology (B.Tech)</div>
+            <div class="dept-name">Computer Science & Engineering</div>
+          </div>
+        </div>
+
+        <!-- POTENTIAL & JOURNEY HIGHLIGHTS -->
+        <div class="about-card reveal-on-scroll delay-2">
+          <h3 class="about-heading">CREATIVE PHILOSOPHY</h3>
+          
+          <p class="about-paragraph">
+            Experience can be built with time, but <strong>curiosity, taste, and drive</strong> define how far you go. I approach every project as an opportunity to refine my visual eye and master new tools.
+          </p>
+
+          <div class="potential-grid">
+            <div class="potential-box">
+              <div class="box-number">01</div>
+              <div class="box-label">YEAR AT MIT MANIPAL</div>
+            </div>
+
+            <div class="potential-box">
+              <div class="box-number">100%</div>
+              <div class="box-label">CREATIVE DRIVE</div>
+            </div>
+
+            <div class="potential-box">
+              <div class="box-number">FIGMA</div>
+              <div class="box-label">PRIMARY DESIGN TOOL</div>
+            </div>
+
+            <div class="potential-box">
+              <div class="box-number">2030</div>
+              <div class="box-label">FUTURE GRADUATION</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. SKILLS & TOOLKIT SECTION
+  ========================================================================== -->
+  <section id="skills">
+    <div class="section-container">
+      <div class="section-label">TOOLKIT // 03</div>
+      <h2 class="section-title">CREATIVE <span class="accent-text">TOOLKIT</span></h2>
+
+      <div class="skills-wrapper">
+        
+        <!-- PRIMARY CREATIVE TOOLS -->
+        <div class="primary-skills-grid">
+          
+          <!-- FIGMA CARD -->
+          <div class="skill-card-primary reveal-on-scroll">
+            <div class="skill-tag">PRIMARY TOOL</div>
+            <div class="skill-icon-wrapper">
+              <img src="./figma.svg" alt="Figma Icon">
+            </div>
+            <div class="skill-info">
+              <h3>Figma</h3>
+              <p>UI/UX Design, Editorial Layouts, Component Wireframing, Visual Graphics & Poster Design.</p>
+            </div>
+          </div>
+
+          <!-- CANVA CARD -->
+          <div class="skill-card-primary reveal-on-scroll delay-2">
+            <div class="skill-tag">PRIMARY TOOL</div>
+            <div class="skill-icon-wrapper">
+              <img src="./canva.svg" alt="Canva Icon">
+            </div>
+            <div class="skill-info">
+              <h3>Canva</h3>
+              <p>Creative Design Concepts, Social Graphics, Fashion Flyers, Brand Presentation Mockups.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CURRENTLY EXPLORING SUBSECTION -->
+        <div class="exploring-box reveal-on-scroll delay-3">
+          <div class="exploring-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+            </svg>
+            <span>CURRENTLY EXPLORING & EXPANDING</span>
+          </div>
+
+          <div class="exploring-grid">
+            
+            <!-- HTML -->
+            <div class="explore-card">
+              <div class="explore-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <div>
+                <span class="explore-name">HTML</span>
+                <span class="explore-desc">Semantic Markup</span>
+              </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="explore-card">
+              <div class="explore-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="explore-name">CSS</span>
+                <span class="explore-desc">Modern Styling & Layouts</span>
+              </div>
+            </div>
+
+            <!-- FIGMA -->
+            <div class="explore-card">
+              <div class="explore-icon">
+                <img src="./figma.svg" alt="Figma" style="width:20px;height:20px;">
+              </div>
+              <div>
+                <span class="explore-name">Figma</span>
+                <span class="explore-desc">UI/UX Prototyping</span>
+              </div>
+            </div>
+
+            <!-- CANVA -->
+            <div class="explore-card">
+              <div class="explore-icon">
+                <img src="./canva.svg" alt="Canva" style="width:20px;height:20px;">
+              </div>
+              <div>
+                <span class="explore-name">Canva</span>
+                <span class="explore-desc">Visual Graphics</span>
+              </div>
+            </div>
+
+            <!-- BRAND AESTHETICS -->
+            <div class="explore-card">
+              <div class="explore-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                  <path d="M2 12h20"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="explore-name">Brand Aesthetics</span>
+                <span class="explore-desc">Visual Identity</span>
+              </div>
+            </div>
+
+            <!-- UI COMPONENTS -->
+            <div class="explore-card">
+              <div class="explore-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+              </div>
+              <div>
+                <span class="explore-name">UI Components</span>
+                <span class="explore-desc">Design Systems</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. PROJECTS SECTION
+  ========================================================================== -->
+  <section id="projects">
+    <div class="section-container">
+      <div class="section-label">SELECTED WORK // 04</div>
+      <h2 class="section-title">THINGS I'VE <span class="accent-text">CREATED</span></h2>
+
+      <div class="projects-gallery">
+        
+        <!-- PROJECT 1: FASHION EDITORIAL -->
+        <div class="project-item reveal-on-scroll" data-project="project-1">
+          <div class="project-img-holder">
+            <img src="./project-01.jpg" alt="Fashion Editorial Poster Design">
+          </div>
+          <div class="project-card-footer">
+            <div class="project-category">Fashion & Editorial Graphic Design</div>
+            <h3 class="project-title">NEW COLLECTION — Fashion Editorial Poster</h3>
+            <div class="project-action-link">
+              <span>VIEW FULL DESIGN</span>
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: BLUEBERRY POSTER -->
+        <div class="project-item reveal-on-scroll delay-1" data-project="project-2">
+          <div class="project-img-holder">
+            <img src="./project-02.jpg" alt="Blueberry Smoothie Poster Design">
+          </div>
+          <div class="project-card-footer">
+            <div class="project-category">Branding & Product Typography</div>
+            <h3 class="project-title">BLUEBERRY SMOOTHIE — Brand Poster</h3>
+            <div class="project-action-link">
+              <span>VIEW FULL DESIGN</span>
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: BILLIE EILISH MUSIC POSTER -->
+        <div class="project-item reveal-on-scroll delay-2" data-project="project-3">
+          <div class="project-img-holder">
+            <img src="./project-03.jpg" alt="Billie Eilish Music Poster Design">
+          </div>
+          <div class="project-card-footer">
+            <div class="project-category">Pop Culture & Graphic Design</div>
+            <h3 class="project-title">BILLIE EILISH — Music Editorial Poster</h3>
+            <div class="project-action-link">
+              <span>VIEW FULL DESIGN</span>
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: TEDxKIET CORE TEAM POSTER -->
+        <div class="project-item reveal-on-scroll delay-3" data-project="project-4">
+          <div class="project-img-holder">
+            <img src="./project-04.jpg" alt="TEDxKIET Executive Leadership Poster">
+          </div>
+          <div class="project-card-footer">
+            <div class="project-category">Event & Brand Graphic Design</div>
+            <h3 class="project-title">TEDxKIET — Executive Leadership Poster</h3>
+            <div class="project-action-link">
+              <span>VIEW FULL DESIGN</span>
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 5: NIKHIL CHINAPA EVENT FLYER -->
+        <div class="project-item reveal-on-scroll delay-4" data-project="project-5">
+          <div class="project-img-holder">
+            <img src="./project-05.jpg" alt="Nikhil Chinapa Concert Event Flyer">
+          </div>
+          <div class="project-card-footer">
+            <div class="project-category">Music & Event Graphic Design</div>
+            <h3 class="project-title">NIKHIL CHINAPA — Concert Event Flyer</h3>
+            <div class="project-action-link">
+              <span>VIEW FULL DESIGN</span>
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 6: JACOB BETHELL SPORTS POSTER -->
+        <div class="project-item reveal-on-scroll delay-1" data-project="project-6">
+          <div class="project-img-holder">
+            <img src="./project-06.jpg" alt="Jacob Bethell Sports Editorial Poster">
+          </div>
+          <div class="project-card-footer">
+            <div class="project-category">Sports & Athlete Editorial Design</div>
+            <h3 class="project-title">JACOB BETHELL — Sports Editorial Poster</h3>
+            <div class="project-action-link">
+              <span>VIEW FULL DESIGN</span>
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. CONTACT SECTION
+  ========================================================================== -->
+  <section id="contact">
+    <div class="section-container">
+      <div class="section-label">CONNECT // 05</div>
+      
+      <div class="contact-grid">
+        
+        <div class="contact-info-card reveal-on-scroll">
+          <h2 class="contact-headline">LET'S CONNECT.</h2>
+          <p class="contact-subtext">Have an idea or project in mind? Let's create something great together.</p>
+
+          <div class="contact-links-list">
+            
+            <!-- EMAIL -->
+            <a href="mailto:arshi.m2025@gmail.com" class="contact-link-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <div>
+                <div class="contact-label">EMAIL</div>
+                <div class="contact-val">arshi.m2025@gmail.com</div>
+              </div>
+            </a>
+
+            <!-- LINKEDIN -->
+            <a href="https://www.linkedin.com/in/arshi-mishra-171733344" target="_blank" rel="noopener" class="contact-link-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <div>
+                <div class="contact-label">LINKEDIN</div>
+                <div class="contact-val">arshi-mishra-171733344</div>
+              </div>
+            </a>
+
+            <!-- GITHUB -->
+            <a href="https://github.com/arshimishra12" target="_blank" rel="noopener" class="contact-link-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <div>
+                <div class="contact-label">GITHUB</div>
+                <div class="contact-val">github.com/arshimishra12</div>
+              </div>
+            </a>
+
+            <!-- INSTAGRAM -->
+            <a href="https://www.instagram.com/vineg_ar_shi?igsh=MXQ3a3R1NTJ1cTBiYQ==" target="_blank" rel="noopener" class="contact-link-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <div>
+                <div class="contact-label">INSTAGRAM</div>
+                <div class="contact-val">@vineg_ar_shi</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- LOCATION & CAMPUS BADGE -->
+        <div class="contact-info-card reveal-on-scroll delay-2">
+          <div class="section-label">CAMPUS</div>
+          <h3 class="about-heading" style="margin-top: 10px;">Manipal Institute of Technology</h3>
+          <p class="about-paragraph">
+            Based in Manipal, Karnataka, India.<br>
+            Studying B.Tech Computer Science & Engineering.
+          </p>
+          <div class="potential-box" style="margin-top: 20px;">
+            <div class="box-number">MIT</div>
+            <div class="box-label">MANIPAL CAMPUS • CLASS OF 2030</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. FINAL SCREEN — BIG THANK YOU ENDING
+  ========================================================================== -->
+  <section class="final-screen">
+    <div class="reveal-on-scroll">
+      <h2 class="final-thank-you">THANK YOU.</h2>
+      <p class="final-tagline">THIS IS ONLY THE BEGINNING.</p>
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div>© 2025 ARSHI MISHRA. ALL RIGHTS RESERVED.</div>
+    <div>DESIGNED FOR GITHUB PAGES • MIT MANIPAL</div>
+  </footer>
+
+  <!-- ==========================================================================
+       PROJECT DETAIL MODAL POPUP
+  ========================================================================== -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <div class="modal-img-wrapper">
+          <img src="" alt="" id="modal-img">
+        </div>
+        <div class="modal-content-info">
+          <div class="modal-tag" id="modal-tag">CATEGORY</div>
+          <h2 class="modal-title" id="modal-title">Project Title</h2>
+          <p class="modal-description" id="modal-desc">Project description goes here.</p>
+          <div class="modal-meta-list">
+            <div class="meta-item">
+              <span class="label">CREATIVE TOOL</span>
+              <span class="value" id="modal-tool">Figma & Canva</span>
+            </div>
+            <div class="meta-item">
+              <span class="label">YEAR</span>
+              <span class="value" id="modal-year">2025</span>
+            </div>
+            <div class="meta-item">
+              <span class="label">DESIGNER</span>
+              <span class="value">Arshi Mishra (MIT Manipal)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="./script.js"></script>
+  <script src="./animations.js"></script>
+</body>
+</html>
